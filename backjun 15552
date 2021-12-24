@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter; 
 import java.util.StringTokenizer; 
 public class Main{ 
-  public static void main(String[] args) throws IOException{ 
+    public static void main(String[] args) throws IOException{ 
 	// BufferedReader에서는 read와 readLine(String의 리턴값을 가짐)만 있기 때문에, 정수는 파싱(parseInt())해야함(String을 Int형으로 파싱). 
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
 	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
@@ -18,7 +18,7 @@ public class Main{
 	br.readLine()을 통해 입력받은 값을 공백단위로 구분하여 nextToken()을 통해 순서대로 호출할 수 있다. 
 	StringTokenizer 선언 시 2번째 파라미터로 별도로 구분자를 추가할 수도 있다. */ 
 
-  for(int i = 0; i < t; i++){ 
+        for(int i = 0; i < t; i++){ 
 	StringTokenizer st = new StringTokenizer(br.readLine()); 
 	int m = Integer.parseInt(st.nextToken()); 
 	int n = Integer.parseInt(st.nextToken()); // readLine을 사용할 경우 return값이 String이므로 다른 타입의 변수로 쓰기 위해선 형 변환을 해야함. 
@@ -27,3 +27,4 @@ public class Main{
 	
 	bw.flush(); // stream 비우기, 남아있는 데이터를 모두 출력, 계속 출력 
 	// bw.close(); / stream 닫기
+}
