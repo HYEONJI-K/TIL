@@ -1,0 +1,14 @@
+* LIFO (last-in first-out)
+: first one to come off with the next pop
+s) queue : FIFO (first-in first-out
+
+ex)
+stack.push(10)
+[10]
+stack.push(3)
+[10, 3]
+
+stack.pop()
+[10]
+
+if) stack js empty, popping returns nil or error message.
