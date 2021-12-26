@@ -12,3 +12,7 @@ stack.pop()
 [10]
 
 if) stack js empty, popping returns nil or error message.
+
+beginning of an array is expensive, an O(n)
+  because it requires all existing array elements to be shifted in memory.
+Adding at the end is O(1);
