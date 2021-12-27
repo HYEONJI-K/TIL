@@ -21,3 +21,11 @@ b = random.randint(10, 20)
 c = a + b
 print(a,b,c)
 # 15 17 32
+
+"""
+아나콘다 프롬프트 가상 환경 만들기
+(base) C:/> conda create -n aip python=3.9    # aip 가상 환경 생성
+(base) C:/> conda activate aip                # aip 가상 환경으로 이동
+(base) C:/> conda install spyder              # aip 가상 환경에 스파이더 설치
+(base) C:/> conda install tensorflow          # aip 가상 환경에 텐서플로 설치
+"""
