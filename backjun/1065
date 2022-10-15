@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static void main(String[ ] args){
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int count = 0, n1 = 0, n2 = 0, n3 = 0;
+        for(int i = 1; i <= n; i++){	
+        	// 0부터 해주면 100미만의 수는 모두 한수 취급을 하기 때문에 0도 count되서 +1한 값이 출력된다.
+            if(i < 100){
+                count++;
+            }
+            else if(i <= n){
+                n1 = i/100;         	  // 100 자리 수
+                n2 = (i/10)%10;     	// 10 자리 수
+                n3 = i%10;            // 1 자리 수
+                // ** 각 자리수의 값을 구할 때에는 i를 이용하여 계산하자! n(X)
+                if(n2 * 2 == n1 + n3){	// n2 - n1 == n2 - n3
+                    count++;
+                }
+            }
+        }
+        System.out.println(count);
+    }
+}
