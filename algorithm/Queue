@@ -1,0 +1,23 @@
+* FIFO (first-in first-out)
+: The element you inserted first is the first one to come out.
+s) stack : LIFO (last-in first-out)
+
+ex)
+queue.enqueue(10)
+[ 10 ]
+
+queue.enqueue(3)
+[ 10, 3 ]
+
+queue.enqueue(15)
+[ 10, 3, 15 ]
+
+queue.dequeue()
+[ 3, 15 ]
+
+queue.dequeue()
+[ 15 ]
+
+N) A Queue is not always the best choice.
+   If the order in which the items are added and removed from the list is not important, you can use a stack instead of a queue.
+   Stacks are simpler and faster.
